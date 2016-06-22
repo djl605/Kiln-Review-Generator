@@ -1,0 +1,9 @@
+{
+  "//details": "It is vital that this package.json is unique, otherwise it will use a cached version",
+  "//application": "shallow-slave-1",
+  "//reinstall": "Reinstall",
+	"scripts": {
+		"preinstall": "bash install/setup-project.sh",
+		"start": "bash launch.sh"
+	}
+}
