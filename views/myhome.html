@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Shallow Slave!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperweb.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Manage your users
+      </h1>
+    </header>
+
+    <main>
+      <p><button type="button" id="log_out">Log Out</button></p>
+      <p>
+        To use this application, set up the users that you want to include in code reviews using<br>
+        the form below. Then set up a Kiln webhook to point to http://shallow-slave.hyperdev.space/hook-target
+      </p>
+      <form id="add_user">
+        Name to be entered in commit messages:<br>
+        <input type="text" id="username"><br>
+        ixUser:
+        <input type="number" id="ixuser">
+        <input type="submit" value="Submit">
+      </form>
+      
+      <table id="users" style="width:300px">
+        <tr>
+          <th>User Name</th>
+          <th>ixUser</th>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <a href="https://hyperdev.com">
+        Remix this in HyperDev
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/cookieFunctions.js"></script>
+    <script src="/myhome.js"></script>
+
+  </body>
+</html>

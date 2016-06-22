@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link id="favicon" rel="icon" href="https://hyperweb.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h3 hidden id="match">Passwords do not match</h3>
+      <h3 hidden id="bad_token">Token does not work. Please make sure the token and Kiln URL are correct.</h3>
+      <h3 hidden id="already_exists">Sorry! An account for that Kiln site already exists. Try <a href="/">logging in.</a></h3>
+    </header>
+    <main>
+      <form id="register">
+        Kiln account:<br>
+        <table>
+          <tr>
+            <td>https://</td>
+            <td><input type="text" name="subdomain"></td>
+            <td>.kilnhg.com</td>
+          </tr>
+        </table>
+        Password:
+        <input type="password" name="password">
+        Repeat your password:<br>
+        <input type="password" name="repeat">
+        Enter an Admin API token (see <a href="http://help.fogcreek.com/8447/how-to-get-a-fogbugz-xml-api-token">here</a> for instructions to obtain one)<br>
+        It is recommended to use a dedicated admin account for this app:
+        <input type="text" name="token">
+        <input type="submit" value="Submit">
+      </form>
+
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>

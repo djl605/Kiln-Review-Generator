@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Shallow Slave!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperweb.space/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Welcome to Shallow Slave!
+      </h1>
+      <h3 hidden id="incorrect_pw">Username/Password do not match our records.</h3>
+    </header>
+
+    <main>
+      <p>You will need to login to access your account.</p>
+      <form id="login">
+        Kiln account:<br>
+        <table>
+          <tr>
+            <td>https://</td>
+            <td><input type="text" name="subdomain"></td>
+            <td>.kilnhg.com</td>
+          </tr>
+        </table>
+        Password:
+        <input type="password" name="password">
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <a href="register">Sign up here!</a>
+      
+    </main>
+
+    <footer>
+      <a href="https://hyperdev.com">
+        Remix this in HyperDev
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/cookieFunctions.js"></script>
+    <script>if (readCookie("hyper-token")) window.location.href = "/myhome";</script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
